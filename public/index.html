@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#" />
+    <title> Prospector </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="style.css">
+    <script src="client.js" defer></script>
+
+    <h1> Prospector </h1>
+    <h3> Produced by 230008958 and 220024326  for assessment  2 of CS5003 </h3>
+</head>
+
+
+
+<body class="flex">
+<div id="wrapper">
+
+    <div id="Startpage">
+        <!-- <p> user game recored</p> // </p>-->
+        <div id="userinfor"><p > Enter your Name : <input id="username" type="text" ></div>
+
+            <p>
+                <label for="selectgamesize"> Please select the size of the game : </label>
+                <select id="selectgamesize">
+                    <option value="3"> 3 x 3 </option>
+                    <option value="4"> 4 x 4 </option>
+                    <option value="5"> 5 x 5 </option>
+                   
+                  
+                </select>
+                <!-- <select id="player"> How many player 
+                     <option value="3"> 3 </option>
+                    ...  or more... 
+                    </select> -->
+                <!-- <select id="playercolor"> customize player perfer colour
+                    ...  or more... 
+                    </select> -->
+                
+            </p>
+            <button id="start"> Start Game</button>
+    </div>
+
+
+    <div id="Gamepage">
+        <div class="game-head flex" >
+           
+            <div class="flex user1"><p id="user1">Name_1:</p><p id="user1Score">0</p></div>
+            
+            <!-- <div class="flex user3"><p id="user3">Name_3 :<p id="user2Score">0</p></p></div> -->
+            <div class="flex user2"><p id="user2">Name_2 :<p id="user2Score">0</p></p></div>
+
+        </div>
+        <div class="game-sub-head flex" >
+           
+            <div class="flex user1T " id="user1T"><p>Your Turn <i class="fa-solid fa-play" style="color: green;"></i></p> <p>  </p></div>
+            
+            <!-- <div class="flex user3"><p>My Turn <i class="fa-solid fa-play" style="color: green;"></i></p></div> -->
+            <div class="flex user2T" id="user2T"> <p>  </p></div>
+           
+
+
+        </div>
+  
+    
+    
+
+
+
+    <div id="Gamemap">
+        <div  id="game-map-container" class="game-map-container">
+        
+            <!-- <input type="button" class="node"><input type="button"class="hedge"><input type="button" class="node">
+            <input type="button"class="hedge"><input type="button" class="node">
+            <input type="button"class="hedge"><input type="button" class="node">
+           
+            <input type="button"class="vedge"><input type="button" class="item"><input type="button"class="vedge">
+            <input type="button" class="item"><input type="button"class="vedge">
+            <input type="button" class="item"><input type="button"class="vedge">
+
+            <input type="button" class="node"><input type="button"class="hedge"><input type="button" class="node">
+            <input type="button"class="hedge"><input type="button" class="node">
+            <input type="button"class="hedge"><input type="button" class="node">
+           
+            <input type="button"class="vedge"><input type="button" class="item"><input type="button"class="vedge">
+            <input type="button" class="item"><input type="button"class="vedge">
+            <input type="button" class="item"><input type="button"class="vedge">
+             -->
+            
+            
+        </div>
+         <button id="giveup"> Quit Game </button>
+    </div>    
+
+    </div>
+
+
+    <div class="Resultboard" id="Resultboard">
+        <p id="result">  Your WINNER!! Score !!</p>
+            
+        <button id="newstart"> New Game</button>
+
+    </div>
+
+
+
+
+</div>    
+</body></html>
